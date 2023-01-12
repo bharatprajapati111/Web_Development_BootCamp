@@ -5,12 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute Page of Linus Torvalds</title>
+
+    <!--for doing scroll smooth-->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        aside{
+            width: 70px;
+            float: right;
+            background-color: blue;
+            
+        }
+
+    </style>
 </head>
 <body>
 
 
-    <h1>Linus Torvalds</h1>
-    <h5>The Creator of Linux</h5>
+    <header>
+        <h1>Linus Torvalds</h1>
+        <h5>The Creator of Linux</h5>
+    </header>
+
+    <nav>
+        <a href="#resources">Go To Resources</a>
+        <a href="#bio">Go To Biography</a>
+        <a href="#achievements">Go To Achievements</a>
+    </nav>
 
     <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg"
@@ -22,17 +45,27 @@
         <figure-caption>A photograph of Linux Torvalds</figure-caption>
     </figure>
 
-    <h2>Biography</h2>
+    <section>
+    <h2 id="bio">Biography</h2>
 
     <p>Linus Torvald is a Finnish-American software engineer who is the creator and, historically, 
         the lead developer of the Linux kernel, used by Linux distributions and other operating systems 
         such as Android. He also created the distributed version control system Git.Torvalds was born on 
         december 28, 1969 in Helsinki,Finland.He studied computer science at the university of Helsinki, and 
         he developed the Linux kernel as a student project in 1991.Since then, the Linux kernel has became one 
-        of the most widely used kernels in the world,powering everyting from smartphones to supercomputers.</p>
+        of the most widely used kernels in the world,powering everyting from smartphones to supercomputers.
+    </p>
+    </section>
 
-    <h2>Achievements</h2>
-    <ul>
+    <aside>
+        <p>
+            Linus Torvalds is developer of Linux. 
+        </p>
+    </aside>
+
+    <section>
+    <h2 id="achievements">Achievements</h2>
+        <ul>
         <li><b>1991</b>-Created the Linux kernel and the version control system Git. </li>
         <li><b>2004</b>- Named one of the 100 Most Influential People in the World" by Time magazine in 2004</li>
         <li><b>2010</b>- Received an honorary doctorate from the University of Helsinki in 2010 </li>
@@ -50,8 +83,13 @@
         <cite>-Time Magzine 
             <a href="https://en.wikipedia.org/wiki/Hacker_ethic">The Famous People</a></cite>
     </blockquote>
+        </section>
+    
+         
 
-    <h2>Resources</h2>
+    <section>
+    <!--for creating bookmark ,we have to take id here then create a hyperlink of that id where you want to give the link-->
+    <h2 id="resources">Resources</h2>
 
     <p>Learn more about Linus Torvalds and his work:</p>
     <ul>
@@ -65,10 +103,11 @@
             <a href="https://www.kernel.org/">The Linux kernel Archives</a>
         </li>
     </ul>
+    </section>
+
+    <footer>
+        <p>Thank you so much</p>
+    </footer>
     
-
-
-   
-
-</body>
+    </body>
 </html>

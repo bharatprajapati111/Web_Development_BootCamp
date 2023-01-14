@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 5px solid black;
+            /* <!--if we want to space b/w two div or two element then we use margin--> */
+            margin: 10px;
+
+            /* <!--the space b/w content and border known as Padding--> */
+            padding:20px ;
+
+            /* <!--after applying padding, the actual size of box will be changed(increase) but we want the actual size after padding then, we use box-sizing--> */
+            box-sizing: border-box;
+        }
+        /* <!--hexadecimal colors--> */
+        #org{
+            background-color:#ff0000;
+        }
+
+        /* <!--rgb colors--> */
+        #wht{
+            background-color: rgb(5, 202, 220);
+        }
+
+        #grn{
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- (.box= div tag)-->
+    <div class="box" id="org">A</div>
+    <div class="box" id="wht">B</div>
+    <div class="box" id="grn">C</div>
+
+
+</body>
+</html>

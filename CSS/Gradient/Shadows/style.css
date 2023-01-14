@@ -1,0 +1,18 @@
+h1{
+    text-shadow: 3px 3px 3px greenyellow; 
+    /* for adding multiple shadow in 1 text */
+    text-shadow: 3px 3px 3px greenyellow, 5px 5px 5px palevioletred; 
+}
+
+.box{
+    background-color:coral ;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 5px thistle;
+    color: blue ;
+    /* multiple shadow */
+    box-shadow: 3px 3px 3px greenyellow, 5px 5px 5px palevioletred; 
+
+    /* for bring this shadow in top and left direction then we will use horizontal and vertical pixel with negative values */
+    box-shadow: 3px 3px 3px greenyellow, -5px -5px 5px palevioletred; 
+}

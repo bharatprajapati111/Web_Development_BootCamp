@@ -1,0 +1,18 @@
+.box{
+    background-color: aqua;
+    /* transform: translate(100px,250px);
+    transform: translateX(100px);
+    transform: translateY(250px);  */
+    /*clockwise from +ve angle  */
+    /* transform: rotate(45deg);
+    /*anti-clockwise from -ve angle  */
+    /* transform: rotate(-45deg);  */
+
+    margin: 200px;
+    transform: scale(2,5);
+    /* transform: scale(2);
+    transform: scale(2); */
+
+    transform: skew(20deg);
+    transform: skew(-20deg);
+}

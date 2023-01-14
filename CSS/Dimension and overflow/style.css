@@ -1,0 +1,19 @@
+.box{
+    max-height: 100px;
+    border: 1px solid black;
+    /* solution of overflow  */
+    /* content can be scrollable if content is bigger than box */
+    overflow: scroll;
+    /* all content will be visible but box size content will apper inside the box and rest of the content will appear outside the box  */
+    overflow:visible;
+    /* all content will be visible but box size content will appear inside the box and rest of the content will be hidden   */
+    overflow: hidden;
+    /* this type pf overflow behaves like s scroll overflow but if content is short than box size then it will automatically reduce the size of box */
+    overflow:auto;
+}
+
+.mydiv{
+    margin: 10px;
+    border: 1px solid black;
+    min-height: 100px;
+}

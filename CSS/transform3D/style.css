@@ -1,0 +1,18 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border:1px solid black;
+}
+
+.translated{
+    /* if we will have to work on third axis(z axis means 3D) then we have to take perspective */
+    transform: perspective(15px) translateZ(-10px);
+}
+
+.scaled{
+    margin-left: 200px;
+    /* transform:perspective(350px) scaleZ(2) rotateZ(15deg) rotateY(30deg); */
+    transform: rotateZ(30deg);
+}
+

@@ -1,0 +1,39 @@
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;
+
+    /* this is not a good practice */
+    grid-template-columns: 200px 200px 210px;
+    /* this will divide each column in equal dimension */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* this will create 3 columns in same dimension */
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-rows: 100px repeat(2, 1fr);
+
+    grid-template-rows: 90px 90px 90px 90px;
+
+    gap: 15px;
+}
+
+.box{
+    background-color: aqua;
+    border: 3px solid black;
+    /* width: 80px;
+    height: 80px; */
+}
+
+#box1
+{
+    /* columns will extent by using these properties from line 1 to line 3 */
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+
+#box3{
+    /* row will extend  from line 2 to line 4*/
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

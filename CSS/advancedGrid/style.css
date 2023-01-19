@@ -1,0 +1,18 @@
+.container{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+
+    display: grid;
+    grid-gap:10px;
+
+    /* this function is used to add multiple rows after fixing the rows before and minmax () is used to give the size of rows and column*/
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.box{
+    background-color: aquamarine;
+    border: 1px solid greenyellow;
+
+}
